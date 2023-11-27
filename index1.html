@@ -27,7 +27,7 @@
         }
 
         nav a {
-            color: #fff;
+            color: #ffffff;
             text-decoration: none;
             padding: 1em;
             margin: 0 1em;
@@ -42,7 +42,6 @@
             color: #fff;
             text-align: center;
             padding: 1em;
-            position: fixed;
             bottom: 0;
             width: 100%;
         }
@@ -51,6 +50,8 @@
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
         }
 
         .resource-card {
@@ -66,8 +67,20 @@
 
         .resource-card a {
             text-decoration: none;
-            color: #333;
+            color:green;
         }
+        .resource-card:hover{
+            transform: translateY(20px);
+        }
+        .resource-card{
+            content: "";
+            display: block;
+            background: linear-gradient(to bottom, rgba(0,176,155,0.5),rgba(150,201,61));
+            z-index: 2;
+            transition: 0.5s all;
+            opacity: 1;
+        }
+        
     </style>
 </head>
 <body>
@@ -77,19 +90,22 @@
     <section class="resources">
         <div class="resource-card">
             <h2><a href="#">Government Health Schemes</a></h2>
-            <pre><b>Pradhan Mantri Jan Arogya Yojana (PMJAY)</b>
-A comprehensive health insurance scheme 
-for economically vulnerable families.
+            <pre><b>Pradhan Mantri Jan Arogya Yojana 
+(PMJAY)</b>
+A comprehensive health insurance 
+scheme for economically vulnerable
+families.
 <br><br>
 <b>National Health Mission (NHM)</b>
 Works towards ensuring accessible, 
 affordable, and quality healthcare 
 services to all.
 <br><br>
-<b>Ayushman Bharat Health and Wellness Centers</b>
-Establishing health and wellness centers
-to deliver comprehensive primary health
-care services.
+<b>Ayushman Bharat Health and Wellness 
+Centers</b>
+Establishing health and wellness 
+centers to deliver comprehensive 
+primary health care services.
             </pre>
         </div>
         <div class="resource-card">
@@ -99,15 +115,18 @@ care services.
         <div class="resource-card">
             <h2><a href="#">Healthcare Providers</a></h2>
             <pre><b>City General Hospital</b>
-Address: 123 Health Street, Cityville
+Address: 123 Health Street,
+Cityville
 Contact: (555) 123-4567
 <br><br>
 <b>Community Health Clinic</b>
-Address: 456 Wellness Avenue, Townsville
+Address: 456 Wellness Avenue,
+Townsville
 Contact: (555) 987-6543
 <br><br>
 <b>Regional Medical Center</b>
-Address: 789 Care Boulevard, Villagetown
+Address: 789 Care Boulevard,
+Villagetown
 Contact: (555) 234-5678
             </pre>
         </div>
@@ -115,7 +134,7 @@ Contact: (555) 234-5678
             <h2><a href="#">Videos</a></h2>
             <p>Videos Regarding Yoga</p>
             <h2>Watch this YouTube Video:</h2>
-            <video src="https://youtu.be/GK28p-OdM4Y" frameborder="0" allowfullscreen></video>
+            <video src="https://youtu.be/GK28p-OdM4Y" frameborder="0" allowfullscreen>Yoga Video</video>
         </div>
         <div class="resource-card">
             <h2><a href="#">Elements </a></h2>
@@ -140,14 +159,10 @@ Contact: (555) 234-5678
                 </ul>
             </p>
         </div>
-            
-            
-                <!-- Add more resource cards as needed -->
-
     </section>
 
     <footer>
-         Health & Wellness 2023
+        Copyright @ www.HealthandWellness.com .All rights reserved
     </footer>
 
 </body>
